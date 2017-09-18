@@ -47,6 +47,7 @@ scbatch_notebook
 
 It would be helpful if you could run these commands in this specific order and provide me with the outputs you get:
 ```
+pwd
 df -h
 module load singularity
 singularity --version
@@ -56,9 +57,9 @@ grep "bind path =" $(dirname $(which singularity))/../etc/singularity/singularit
 ```
 
 Common pitfalls:
-- wrong version of singularity (step 3 should give you 2.3.1)
-- Singularity not installed as root  (step 5 should show that singularity command is owned by root)
-- storage drives not included in the singularity.conf configuration file (step 6 should include all drives seen in step 5 that you are going to use)
+- wrong version of singularity (step 4 should give you 2.3.1)
+- Singularity not installed as root  (step 6 should show that singularity command is owned by root)
+- storage drives not included in the singularity.conf configuration file (step 7 should include all drives seen in step 5 that you are going to use)
 
 
 
