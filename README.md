@@ -59,7 +59,7 @@ grep "bind path =" $(dirname $(which singularity))/../etc/singularity/singularit
 Common pitfalls:
 - wrong version of singularity (step 4 should give you 2.3.1)
 - Singularity not installed as root  (step 6 should show that singularity command is owned by root)
-- storage drives not included in the singularity.conf configuration file (step 7 should include all drives seen in step 5 that you are going to use)
+- network storage drives configuration missing from singularity.conf configuration file (step 7 should include all drives seen in step 5 that you are going to use, and most importantly the drive shown by step 1)
 
 
 
